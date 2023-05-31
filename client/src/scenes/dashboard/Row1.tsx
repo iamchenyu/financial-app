@@ -21,7 +21,6 @@ import {
 const Row1 = () => {
   const { palette } = useTheme();
   const { data } = useGetKpisQuery();
-  console.log("🚀 ~ file: Row1.tsx:8 ~ Row1 ~ data:", data);
 
   const revenueExpenses = useMemo(() => {
     return (
