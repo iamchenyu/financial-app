@@ -1,3 +1,5 @@
+import dotenv from "dotenv";
+import app from "./index.js";
 import mongoose from "mongoose";
 import KPI from "./models/KPI.js";
 import Product from "./models/Product.js";
@@ -5,6 +7,7 @@ import Transaction from "./models/Transaction.js";
 import { kpis, products, transactions } from "./data/data.js";
 
 /* MONGOOSE */
+dotenv.config();
 const PORT = process.env.PORT || 9000;
 mongoose
   .connect(process.env.MONGO_URL, {
