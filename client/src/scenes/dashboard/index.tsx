@@ -49,6 +49,8 @@ const gridTemplateSmallScreens = `
 `;
 
 const Dashboard = () => {
+  // useMediaQuery hook listens for matches to a CSS media query
+  // It allows the rendering of components based on whether the query matches or not
   const isAboveMediumScreens = useMediaQuery("(min-width: 1200px)");
   return (
     <Box

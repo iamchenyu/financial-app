@@ -16,6 +16,7 @@ const ProductSchema = new Schema(
       currency: "USD",
       get: (v) => v / 100,
     },
+    // many-to-many relationship between products and transactions
     transactions: [
       {
         type: mongoose.Schema.Types.ObjectId,
